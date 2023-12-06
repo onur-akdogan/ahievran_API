@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mariadb://shiningmoony.com.tr:3306/shiningm_ahi_socitify</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="ahi_proje@localhost" uuid="caaff687-9870-4a4e-9e62-6f2de0e7caa7">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/ahi_proje</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

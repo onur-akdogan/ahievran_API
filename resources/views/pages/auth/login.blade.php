@@ -16,17 +16,18 @@
             <div class="auth-form-wrapper px-4 py-5">
               <a href="#" class="noble-ui-logo d-block mb-2">AHI<span>SOCITIFY</span></a>
 
-              <form class="forms-sample">
+              <form class="forms-sample" action="{{route('login')}}" method="POST">
+                  @csrf
                 <div class="mb-3">
                   <label for="userEmail" class="form-label">E-Posta Adresiniz</label>
-                  <input type="email" class="form-control" id="userEmail" placeholder="E-Posta Adresiniz">
+                  <input name="email" type="email" class="form-control" id="userEmail" placeholder="E-Posta Adresiniz">
                 </div>
                 <div class="mb-3">
                   <label for="userPassword" class="form-label">Şifre</label>
-                  <input type="password" class="form-control" id="userPassword" autocomplete="current-password" placeholder="Şifre">
+                  <input name="password" type="password" class="form-control" id="userPassword" autocomplete="current-password" placeholder="Şifre">
                 </div>
                 <div>
-                  <a href="{{ url('/') }}" class="btn btn-primary me-2 mb-2 mb-md-0">Giriş Yap</a>
+                  <button type="submit" class="btn btn-primary me-2 mb-2 mb-md-0">Giriş Yap</button>
                 </div>
 
               </form>
